@@ -161,6 +161,7 @@ public class UserController
 					String userPhoto=userName+"."+fileExtention;
 				
 					session.setAttribute("userName", usermanagement.getUserName());
+					session.setAttribute("userType", usermanagement.getUserType());
 					usermanagement.setUserName(userName);
 					usermanagement.setUserPhoto(userPhoto);
 					userService.createNewUSer(usermanagement);
@@ -202,6 +203,7 @@ public class UserController
 					String userPhoto=userName+"."+fileExtention;
 					
 					session.setAttribute("userName", usermanagement.getUserName());
+					session.setAttribute("userType", usermanagement.getUserType());
 					usermanagement.setUserName(userName);
 					usermanagement.setUserPhoto(userPhoto);
 					userService.createNewUSer(usermanagement);
