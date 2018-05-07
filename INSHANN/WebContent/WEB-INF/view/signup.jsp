@@ -57,8 +57,27 @@ body
 		{
 			document.getElementById("sel").disabled=false;
 			document.getElementById("adh").innerHTML="";
+			var count=0;
+			for(i=0;i<takeValue.length;i++)
+			{
+				if(takeValue.charAt(i) >= 48 || takeValue.charAt(i) <= 57)
+				{
+					count++;
+					if(count==12)
+					{
+						document.getElementById("adh").innerHTML="";
+					}
+					
+				}
+				else
+				{
+					document.getElementById("adh").innerHTML="Your Adhar Card No.(s) Are must be in didgit";
+					document.getElementById("sel").disabled=true;
+				}	
+			}
 		}
 	}
+
 	
 	function checkLengthPassword()
 	{
