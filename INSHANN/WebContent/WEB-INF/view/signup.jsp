@@ -134,7 +134,8 @@ body
   					  
   					  <div class="input-group">
   					  			<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-   				 	  			<input type="email" name="emailId" class="form-control" placeholder="EMAIL-ID" required="required" value="${usermanagement.emailId}">
+   				 	  			<input type="email" name="emailId" class="form-control" placeholder="EMAIL-ID" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+								       required="required" value="${usermanagement.emailId}">
   					  </div>
   					  
   					   <div class="input-group">
