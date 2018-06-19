@@ -8,59 +8,54 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-
 @Entity
-@Table(name="PERSONAL_INFORMATION")
-public class PersonalInformation
-{
+@Table(name = "PERSONAL_INFORMATION")
+public class PersonalInformation {
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="PERSONAL_ID" )
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PERSONAL_ID")
 	@SequenceGenerator(name = "PERSONAL_ID", sequenceName = "PERSONAL_ID", allocationSize = 1)
-	@Column(name="PERSONAL_ID")
+	@Column(name = "PERSONAL_ID")
 	private int id;
-	
-	@Column(name="NAME")
+
+	@Column(name = "NAME")
 	private String name;
-	
-	@Column(name="LANGUAGE")
+
+	@Column(name = "LANGUAGE")
 	private String language;
-	
-	@Column(name="ABOUT_YOU",length=1500)
+
+	@Column(name = "ABOUT_YOU", length = 1500)
 	private String aboutYou;
-	
-	@Column(name="JOBS")
+
+	@Column(name = "JOBS")
 	private String jobs;
-	
-	@Column(name="EDUCATIONL_DETAILS")
+
+	@Column(name = "EDUCATIONL_DETAILS")
 	private String eduDetails;
-	
-	@Column(name="INTERNSHIPS")
+
+	@Column(name = "INTERNSHIPS")
 	private String internships;
-	
-	@Column(name="EXPERIENCES")
+
+	@Column(name = "EXPERIENCES")
 	private String experiences;
-	
-	@Column(name="WORK_SAMPLE")
+
+	@Column(name = "WORK_SAMPLE")
 	private String workSample;
-	
-	@Column(name="PROJECTS")
+
+	@Column(name = "PROJECTS")
 	private String projects;
-	
-	@Column(name="LINKED_ACCOUNT")
+
+	@Column(name = "LINKED_ACCOUNT")
 	private String linkedAccount;
 
-	@Column(name="APPLY_STATUS")
+	@Column(name = "APPLY_STATUS")
 	private String applyStatus;
-	
-	@Column(name="AD_NUMBER")
+
+	@Column(name = "AD_NUMBER")
 	private Integer adNumber;
-	
-	@Column(name="USERNAME")
+
+	@Column(name = "USERNAME")
 	private String userName;
-	
-	
-	
-	
+
 	public String getUserName() {
 		return userName;
 	}
@@ -172,7 +167,5 @@ public class PersonalInformation
 	public void setLinkedAccount(String linkedAccount) {
 		this.linkedAccount = linkedAccount;
 	}
-	
-	
-	
+
 }

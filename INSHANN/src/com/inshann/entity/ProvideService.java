@@ -9,36 +9,32 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="PROVIDE_SERVICE")
-public class ProvideService 
-{
+@Table(name = "PROVIDE_SERVICE")
+public class ProvideService {
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SEQ_ID" )
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_ID")
 	@SequenceGenerator(name = "SEQ_ID", sequenceName = "SEQ_ID", allocationSize = 1)
-	@Column(name="SEQ_ID")
-	private int id; 
-	
-	@Column(name="NEED")
+	@Column(name = "SEQ_ID")
+	private int id;
+
+	@Column(name = "NEED")
 	private String need;
-	
-	@Column(name="FOR_WHAT")
+
+	@Column(name = "FOR_WHAT")
 	private String forWhat;
-	
-	@Column(name="PRICE")
+
+	@Column(name = "PRICE")
 	private String price;
-	
-	@Column(name="DURATION")
+
+	@Column(name = "DURATION")
 	private String duration;
-	
-	@Column(name="DESCRIPTION",length=1500)
+
+	@Column(name = "DESCRIPTION", length = 1500)
 	private String description;
-	
-	@Column(name="LOCATION")
+
+	@Column(name = "LOCATION")
 	private String location;
-	
-	
-	
-	
+
 	public String getNeed() {
 		return need;
 	}
@@ -95,7 +91,4 @@ public class ProvideService
 		this.location = location;
 	}
 
-	
-	
-	
 }

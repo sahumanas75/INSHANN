@@ -1,62 +1,56 @@
-input[type="text"],
-select.form-control 
-{
-  background: transparent;
-  border-radius: 20px;
-  background-color: #1A84B4;
-  color: white;
-  height: 40px;
-
-}
-input[type="password"],
-select.form-control 
-{
-  background: transparent;
-  border-radius: 20px;
-  background-color: #1A84B4;
-  color: white;
-  height: 40px;
-}
-input[type="email"],
-select.form-control 
-{
-  background: transparent;
-  border-radius: 20px;
-  background-color: #1A84B4;
-  color: white;
-  height: 40px;
-}
-input[type="file"],
-select.form-control 
-{
-  background: transparent;
-  border-radius: 20px;
-  background-color: #1A84B4;
-  color: white;
-  height: 40px;
-}
-.form-control::-webkit-input-placeholder
- { 
+input[type="text"], select.form-control {
+	background: transparent;
+	border-radius: 20px;
+	background-color: #1A84B4;
 	color: white;
- } 
-.input-group
-{
+	height: 40px;
+}
+
+input[type="password"], select.form-control {
+	background: transparent;
+	border-radius: 20px;
+	background-color: #1A84B4;
+	color: white;
+	height: 40px;
+}
+
+input[type="email"], select.form-control {
+	background: transparent;
+	border-radius: 20px;
+	background-color: #1A84B4;
+	color: white;
+	height: 40px;
+}
+
+input[type="file"], select.form-control {
+	background: transparent;
+	border-radius: 20px;
+	background-color: #1A84B4;
+	color: white;
+	height: 40px;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: white;
+}
+
+.input-group {
 	margin-top: 15px;
 }
-#button
-{
+
+#button {
 	border-radius: 20px;
-  background-color: #5A5A5A;
-  color: white;
-  font-family: sans-serif;
-  height: 40px;
-  font-size: 17px;
+	background-color: #5A5A5A;
+	color: white;
+	font-family: sans-serif;
+	height: 40px;
+	font-size: 17px;
 }
-.fix
-{
+
+.fix {
 	line-height: 40px;
 	color: white;
 	font-family: sans-serif;
-	 font-size: 17px;
-	 padding: 3px;
+	font-size: 17px;
+	padding: 3px;
 }
